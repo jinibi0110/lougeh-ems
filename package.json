@@ -1,0 +1,50 @@
+{
+  "name": "vue-material-dashboard",
+  "version": "1.2.1",
+  "private": true,
+  "description": "",
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "npm run serve",
+    "start:dev": "webpack-dev-server",
+    "test": "jest"
+  },
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chartist": "0.11.2",
+    "date-fns": "^2.0.1",
+    "google-maps": "3.3.0",
+    "moment": "^2.24.0",
+    "vue": "2.6.10",
+    "vue-clickaway": "2.2.2",
+    "vue-github-buttons": "3.1.0",
+    "vue-js-modal": "^1.3.31",
+    "vue-material": "1.0.0-beta-11",
+    "vue-router": "3.0.6",
+    "vue-social-sharing": "2.4.5",
+    "vue2-transitions": "^0.3.0",
+    "vuejs-datepicker": "^1.6.2",
+    "vuetify": "^2.0.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.8.0",
+    "@vue/cli-plugin-eslint": "3.8.0",
+    "@vue/cli-service": "3.8.3",
+    "@vue/eslint-config-prettier": "4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "es6-promise": "4.2.8",
+    "eslint-plugin-vue": "5.2.2",
+    "jest": "^24.9.0",
+    "node-sass": "4.12.0",
+    "sass": "^1.17.4",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-vuetify": "^0.6.3",
+    "vue-template-compiler": "2.6.10",
+    "vuetify-loader": "^1.2.2"
+  },
+  "license": "ISC"
+}
