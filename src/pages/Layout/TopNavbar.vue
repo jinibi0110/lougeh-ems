@@ -20,12 +20,18 @@
             <li class="md-list-item">
               <div class="md-list-item-content">
                 <drop-down>
-                  <md-button slot="title" class="md-button md-just-icon md-simple" data-toggle="dropdown">
-                  <md-icon>person</md-icon>
+                  <md-button
+                    slot="title"
+                    class="md-button md-just-icon md-simple"
+                    data-toggle="dropdown"
+                  >
+                    <md-icon>person</md-icon>
                   </md-button>
                   <ul class="dropdown-menu dropdown-menu-right md-success">
-                    <li><router-link to='/changePassword'>Change Password</router-link></li>
-                    <li><router-link to='/signin'>Sign Out</router-link></li>
+                    <!-- <li><router-link to='/changePassword'>Change Password</router-link></li> -->
+                    <li>
+                      <router-link to="/signin">Sign Out</router-link>
+                    </li>
                   </ul>
                 </drop-down>
               </div>
@@ -40,16 +46,23 @@
 <script>
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
   methods: {
     toggleSidebar() {
       this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang="css"></style>
+<style>
+.md-theme-default a:not(.md-button) {
+  color: #00bcd4;
+  color: var(--md-theme-default-primary-on-background, #00bcd4);
+}
+
+a {
+  color: #00bcd4;
+}
+</style>

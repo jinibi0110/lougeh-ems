@@ -1,14 +1,14 @@
 <template>
   <v-app id="inspire">
     <v-content>
-      <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
+      <v-container style="padding-bottom: 8rem" class="fill-height" fluid>
+        <v-row justify="center">
           <v-col cols="12" sm="8" md="4">
             <center>
               <h1>
                 E-STUDYANTE
               </h1>
-              <h5>Lou Geh University Enrollment Management System</h5>
+              <h4>Lou Geh University Enrollment Management System</h4>
             </center>
             <br />
             <v-card class="elevation-12">
@@ -27,6 +27,7 @@
                     prepend-icon="person"
                     type="id"
                     v-model="input.uid"
+                    style="margin-left:1rem;margin-right:1rem"
                   ></v-text-field>
 
                   <v-text-field
@@ -36,12 +37,17 @@
                     prepend-icon="lock"
                     type="password"
                     v-model="input.password"
+                    style="margin-left:1rem;margin-right:1rem"
                   ></v-text-field>
                 </v-form>
               </v-card-text>
               <v-card-actions>
                 <div class="flex-grow-1"></div>
-                <v-btn id="btn-sign-in" color="info" @click="login()"
+                <v-btn
+                  id="btn-sign-in"
+                  color="info"
+                  @click="login()"
+                  style="margin-right:1.5rem;margin-bottom:1rem"
                   >Sign In</v-btn
                 >
               </v-card-actions>
