@@ -22,12 +22,12 @@ const routes = [
   {
     path: "/signin",
     component: SignIn,
-    name: null
+    name: null,
   },
   {
     path: "/changePassword",
     component: ChangePassword,
-    name: null
+    name: null,
   },
   {
     path: "/",
@@ -37,39 +37,39 @@ const routes = [
       {
         path: "dashboard",
         name: "Manage User Account",
-        component: UserAccount
+        component: UserAccount,
       },
       {
         path: "courses",
         name: "Manage Courses",
-        component: Course
+        component: Course,
       },
       {
         path: "subjects",
         name: "Manage Subjects",
-        component: Subject
+        component: Subject,
       },
       {
         path: "roles",
         name: "Manage Roles",
-        component: Role
+        component: Role,
       },
       {
         path: "sections",
         name: "Manage Sections",
-        component: Section
+        component: Section,
       },
       {
         path: "schoolyear",
         name: "Manage School Year",
-        component: SchoolYear
+        component: SchoolYear,
       },
       {
         path: "studentinfo",
         name: "Manage Student Information",
-        component: StudentInfo
-      }
-    ]
+        component: StudentInfo,
+      },
+    ],
   },
   {
     path: "/",
@@ -79,19 +79,19 @@ const routes = [
       {
         path: "registrar",
         name: "Add Student Information",
-        component: RegistrarAddStudent
+        component: RegistrarAddStudent,
       },
       {
         path: "enrollsubject",
         name: "Enroll Subjects",
-        component: EnrollSubject
+        component: EnrollSubject,
       },
       {
         path: "encodegrade",
         name: "Encode Grades",
-        component: EncodeGrade
-      }
-    ]
+        component: EncodeGrade,
+      },
+    ],
   },
   {
     path: "/",
@@ -101,20 +101,20 @@ const routes = [
       {
         path: "student",
         name: "View Profile",
-        component: ViewProfile
+        component: ViewProfile,
       },
       {
         path: "viewgrades",
         name: "View Grades",
-        component: ViewGrades
+        component: ViewGrades,
       },
       {
         path: "prospectus",
         name: "View Prospectus",
-        component: ViewProspectus
-      }
-    ]
-  }
+        component: ViewProspectus,
+      },
+    ],
+  },
 ];
 
 export default routes;
